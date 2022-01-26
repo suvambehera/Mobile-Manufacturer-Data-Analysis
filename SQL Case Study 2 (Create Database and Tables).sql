@@ -34,6 +34,8 @@ CREATE TABLE DIM_DATE (
 [MONTH] AS MONTH([DATE])
 )
 
+
+
 CREATE TABLE FACT_TRANSACTIONS (
 IDModel INT REFERENCES DIM_MODEL(IDModel),
 IDCustomer INT REFERENCES DIM_CUSTOMER(IDCustomer),
@@ -42,7 +44,7 @@ Date DATE REFERENCES DIM_DATE([DATE]),
 TotalPrice MONEY,
 Quantity INT,
 )
-
+---There is an error here
 /************************************************************************************************
 Insert the data in the tables
 ************************************************************************************************/
