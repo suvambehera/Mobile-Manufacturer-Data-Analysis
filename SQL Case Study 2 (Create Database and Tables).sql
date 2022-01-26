@@ -17,6 +17,7 @@ Customer_Name VARCHAR(30),
 Email VARCHAR (40),
 Phone BIGINT
 )
+---Customer Table created
 
 CREATE TABLE DIM_LOCATION (
 IDLocation INT PRIMARY KEY IDENTITY(2001, 1),
